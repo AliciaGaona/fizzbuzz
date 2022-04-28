@@ -2,7 +2,8 @@
 // Part 1 Read json file ===========================
 //const rawdata = fs.readFileSync("explorers.json"); //readFileSync sirve para leer archivo
 //const explorers = JSON.parse(rawdata); // lo que lee lo gurada en un JSON en explorers
-
+ 
+//5. Refactor de la lectura del archivo.
 const Reader = require('./lib/utils/Reader.js');
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
 console.log(explorers)
@@ -15,7 +16,7 @@ console.log(explorersInNode.length)//filtro de los explorers que tienen mission 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-console.log(usernamesInNode)
+console.log(usernamesInNode)//crea una lista que tare el githubUsername de explorers que tienen la mision "node"
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 

@@ -1,8 +1,7 @@
 const Reader= require('./../../lib/utils/Reader')
 
-decribe("Pruebas unitarias para Reader", ()=>{
-    test("1. leer archivo Json", ()=>{
-     const explorers = Reader.readJsonFile("explorers.json"); 
+
+    test("1. leer archivo Json que no existe", ()=>{
+     const explorers = Reader.readJsonFile("explorers1.json"); 
      expect(explorers).toBe(explorers)
-     });
-})
+     })

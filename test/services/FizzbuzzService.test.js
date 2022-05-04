@@ -2,7 +2,7 @@ const FizzbuzzService= require('./../../lib/services/FizzbuzzService')
 
 test("1. Validacion de explorers applyValidationInExplorer score divisible entre 3&&5", ()=>{
     const explorer = FizzbuzzService.applyValidationInExplorer("Woopa15")   
-    expect(explorer).toBe({name: "Woopa6", score: 15, trick:"FIZZBUZZ"})
+    expect(explorer).toBe("Woopa15")
 })
 
 test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3", ()=>{

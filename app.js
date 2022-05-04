@@ -6,17 +6,17 @@
 //5. Refactor de la lectura del archivo.
 const Reader = require('./lib/utils/Reader.js');
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
-console.log(explorers)
+//console.log(explorers)
 
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-console.log(explorersInNode.length)//filtro de los explorers que tienen mission "node"
+//console.log(explorersInNode.length)//filtro de los explorers que tienen mission "node"
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-console.log(usernamesInNode)//crea una lista que tare el githubUsername de explorers que tienen la mision "node"
+//console.log(usernamesInNode)//crea una lista que tare el githubUsername de explorers que tienen la mision "node"
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
@@ -36,6 +36,8 @@ const assignFizzTrick = function(explorer){
 };
 
 const explorersInNodeAndFizzTrick = explorersInNode.map((explorer) => assignFizzTrick(explorer));
+//console.log("Nueva lista explorersInNodeAndFizzTrick, i el explorer tiene un score que sea divisible entre 3 , deberá tener un campo trick que diga FIZZ")
+//console.log(explorersInNodeAndFizzTrick)
 
 // Part 6: Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score
 //
@@ -50,7 +52,8 @@ const assignBuzzTrick = function(explorer){
 };
 
 const explorersInNodeAndBuzzTrick = explorersInNode.map((explorer) => assignBuzzTrick(explorer));
-
+//console.log("nueva lista explorersInNodeAndBuzzTrick, cuando el score sea divisible entre 5, entonces el valor del nuevo campo trick será BUZZ")
+//console.log(explorersInNodeAndBuzzTrick)
 //Part7: Get a new list of explorers in Node, if the score number is divisible by 3 AND by 5 we need to set a new property called FIZZBUZZ, if not this value should be the same score value
 
 const assignFizzBuzzTrick = function(explorer){
@@ -64,7 +67,8 @@ const assignFizzBuzzTrick = function(explorer){
 };
 
 const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assignFizzBuzzTrick(explorer));
-
+console.log("nueva lista explorersInNodeAndFizzBuzzTrick, cuando el valor del score fuera divisible entre 3 y también entre 5")
+console.log(explorersInNodeAndFizzBuzzTrick)
 // Part 8: Get a list of the explorers in node, if the score is divisible by 5 and 3, set the property trick and the value FIZZBUZZ, if is just divisible by 5 set the property trcik and the value BUZZ, if is just divisible by 3 set the property trick and the value FIZZ, otherwise set the property trick and the score value. TODO
 
 

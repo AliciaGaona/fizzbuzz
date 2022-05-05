@@ -10,25 +10,22 @@ const filterByMission=ExplorerService.filterByMission(explorers, "node");
 const getAmountOfExplorersByMission=ExplorerService.getAmountOfExplorersByMission(explorers, "node");
 const getExplorersUsernamesByMission=ExplorerService.getExplorersUsernamesByMission(explorers, "node");
 
-console.log(filterByMission)
-console.log(getAmountOfExplorersByMission)
-console.log(getExplorersUsernamesByMission)
+//console.log(filterByMission)
+//console.log(getAmountOfExplorersByMission)
+//console.log(getExplorersUsernamesByMission)
 
-// Part 2: Get the quantity of explorers names in node
-const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-//console.log(explorersInNode.length)//filtro de los explorers que tienen mission "node"
 
-// Part4: Get the explorer's usernames in Node
-const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
-const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-//console.log(usernamesInNode)//crea una lista que tare el githubUsername de explorers que tienen la mision "node"
+const explorer1 = {name: "Explorer1", score: 1}
+FizzbuzzService.applyValidationInExplorer(explorer1) // {name: "Explorer1", score: 1, trick: 1} 
 
-// DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
+const explorer3 = {name: "Explorer3", score: 3}
+FizzbuzzService.applyValidationInExplorer(explorer3) // {name: "Explorer3", score: 3, trick: "FIZZ"}
 
-// Part 5: Get a new list of explorers in node, if the score numbers is divisible by 3, I need a new propery called trick, and the value assigned is FIZZ, if not the value should be the score itself.
-// Score: 3, Trick: FIZZ.
-// Score: 4, Trick: 4.
-// Score: 5, Trick: 5.
+const explorer5 = {name: "Explorer5", score: 5}
+FizzbuzzService.applyValidationInExplorer(explorer5) // {name: "Explorer5", score: 5, trick: "BUZZ"}
+
+const explorer15 = {name: "Explorer15", score: 15}
+FizzbuzzService.applyValidationInExplorer(explorer15) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 
 const assignFizzTrick = function(explorer){
     if(explorer.score%3 === 0){

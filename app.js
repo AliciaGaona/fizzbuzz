@@ -1,9 +1,3 @@
-//const fs = require("fs");
-// Part 1 Read json file ===========================
-//const rawdata = fs.readFileSync("explorers.json"); //readFileSync sirve para leer archivo
-//const explorers = JSON.parse(rawdata); // lo que lee lo gurada en un JSON en explorers
- 
-//5. Refactor de la lectura del archivo.
 const Reader = require('./lib/utils/Reader.js');
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
 console.log(explorers)

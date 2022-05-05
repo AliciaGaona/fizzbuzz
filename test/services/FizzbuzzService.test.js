@@ -13,10 +13,12 @@ test("2. Validacion de explorers applyValidationInExplorer score divisible entre
 })
 
 test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3", ()=>{
-    const explorer = FizzbuzzService.applyValidationInExplorer("Woopa6")  
-    expect(explorer).not.toBeUndefined()
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer3", score: 3})  
+    const res= {name: "Explorer3", score: 3, trick: "FIZZ"}
+    expect(explorer).toBe(res)
 })
 test("3. Validacion de explorers applyValidationInExplorer score divisible entre 5", ()=>{
-    const explorer = FizzbuzzService.applyValidationInExplorer("Woopa5")   
-    expect(explorer).not.toBeUndefined()
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer5", score: 5}) 
+    const res= {name: "Explorer5", score: 5, trick: "BUZZ"}
+    expect(explorer).toBe(res)
 })

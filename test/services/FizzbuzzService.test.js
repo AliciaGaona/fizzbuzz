@@ -14,11 +14,11 @@ test("2. Validacion de explorers applyValidationInExplorer score divisible entre
 
 test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3", ()=>{
     const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer3", score: 3})  
-    const res= {name: "Explorer3", score: 3, trick: "FIZZ"}
-    expect(explorer).toBe(res)
+    const res= {name: "Explorer3", score: 3, trick: "FIZZ", trick: 3}
+    expect(explorer).toStrictEqual(res)
 })
 test("3. Validacion de explorers applyValidationInExplorer score divisible entre 5", ()=>{
     const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer5", score: 5}) 
-    const res= {name: "Explorer5", score: 5, trick: "BUZZ"}
-    expect(explorer).toBe(res)
+    const res= {name: "Explorer5", score: 5, trick: "BUZZ", trick:5}
+    expect(explorer).toStrictEqual(res)
 })

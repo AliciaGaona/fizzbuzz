@@ -26,5 +26,5 @@ test("3. Validacion de explorers applyValidationInExplorer score divisible entre
 test("4. Validacion de explorers applyValidationInExplorer score divisible entre 5", ()=>{
     const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer5", score: 5}) 
     const res= {name: "Explorer5", score: 5, trick: "BUZZ", trick:5}
-    expect(explorer).not.toBeUndefined()
+    expect(explorer).toBeUndefined()
 })

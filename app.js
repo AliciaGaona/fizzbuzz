@@ -6,7 +6,7 @@
 //5. Refactor de la lectura del archivo.
 const Reader = require('./lib/utils/Reader.js');
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
-//console.log(explorers)
+console.log(explorers)
 
 
 // Part 2: Get the quantity of explorers names in node
@@ -67,8 +67,8 @@ const assignFizzBuzzTrick = function(explorer){
 };
 
 const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assignFizzBuzzTrick(explorer));
-console.log("nueva lista explorersInNodeAndFizzBuzzTrick, cuando el valor del score fuera divisible entre 3 y también entre 5")
-console.log(explorersInNodeAndFizzBuzzTrick)
+//console.log("nueva lista explorersInNodeAndFizzBuzzTrick, cuando el valor del score fuera divisible entre 3 y también entre 5")
+//console.log(explorersInNodeAndFizzBuzzTrick)
 // Part 8: Get a list of the explorers in node, if the score is divisible by 5 and 3, set the property trick and the value FIZZBUZZ, if is just divisible by 5 set the property trcik and the value BUZZ, if is just divisible by 3 set the property trick and the value FIZZ, otherwise set the property trick and the score value. TODO
 
 

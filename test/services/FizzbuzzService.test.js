@@ -1,8 +1,15 @@
 const FizzbuzzService= require('./../../lib/services/FizzbuzzService')
 
-test("1. Validacion de explorers applyValidationInExplorer score divisible entre 3&&5", ()=>{
-    const explorer = FizzbuzzService.applyValidationInExplorer("Woopa15")   
-    expect(explorer).not.toBeUndefined()
+test("1. Validacion de explorers applyValidationInExplorer score divisible entre 1", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer1", score: 1})  
+    const res= {name: "Explorer1", score: 1,  trick: 1}
+    expect(explorer).toStrictEqual(res)
+})
+
+test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3&&5", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer2", score: 15})  
+    const res= {name: "Explorer2", score: 15,  trick: "FIZZBUZZ", trick: 15}
+    expect(explorer).toStrictEqual(res)
 })
 
 test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3", ()=>{

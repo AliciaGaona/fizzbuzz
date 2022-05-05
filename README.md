@@ -26,5 +26,7 @@ comando : npm run linter-fix
 ![image](https://user-images.githubusercontent.com/99162884/166896316-46b37617-5ea0-471c-b5ee-1289d09d7d58.png)
 
 
+Referencia :
 
+https://eslint.org/docs/rules/
 

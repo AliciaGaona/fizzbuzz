@@ -15,9 +15,9 @@ const getExplorersUsernamesByMission=ExplorerService.getExplorersUsernamesByMiss
 //console.log(getExplorersUsernamesByMission)
 
 
-const explorer1 = {name: "Woopa1"}
+const explorer1 = {name: "Explorer1", score: 1}
 FizzbuzzService.applyValidationInExplorer(explorer1) // {name: "Explorer1", score: 1, trick: 1} 
-console.log(explorers.tricknode )
+
 const explorer3 = {name: "Explorer3", score: 3}
 FizzbuzzService.applyValidationInExplorer(explorer3) // {name: "Explorer3", score: 3, trick: "FIZZ"}
 
@@ -26,4 +26,3 @@ FizzbuzzService.applyValidationInExplorer(explorer5) // {name: "Explorer5", scor
 
 const explorer15 = {name: "Explorer15", score: 15}
 FizzbuzzService.applyValidationInExplorer(explorer15) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
-

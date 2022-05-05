@@ -2,8 +2,17 @@ const ExplorerService=require('./lib/services/ExplorerService')
 const FizzbuzzService=require('./lib/services/FizzbuzzService')
 const Reader = require('./lib/utils/Reader.js');
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
-console.log(explorers)
+//console.log(explorers)
 
+
+// Aplicación del ExplorerService sobre la lista de explorers
+const filterByMission=ExplorerService.filterByMission(explorers, "node");
+const getAmountOfExplorersByMission=ExplorerService.getAmountOfExplorersByMission(explorers, "node");
+const getExplorersUsernamesByMission=ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+
+console.log(filterByMission)
+console.log(getAmountOfExplorersByMission)
+console.log(getExplorersUsernamesByMission)
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");

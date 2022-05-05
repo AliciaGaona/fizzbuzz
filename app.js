@@ -11,14 +11,14 @@ const filterByMission=ExplorerService.filterByMission(explorers, "node");
 const getAmountOfExplorersByMission=ExplorerService.getAmountOfExplorersByMission(explorers, "node");
 const getExplorersUsernamesByMission=ExplorerService.getExplorersUsernamesByMission(explorers, "node");
 
-//console.log(filterByMission)
-//console.log(getAmountOfExplorersByMission)
-//console.log(getExplorersUsernamesByMission)
+// console.log(filterByMission)
+// console.log(getAmountOfExplorersByMission)
+// console.log(getExplorersUsernamesByMission)
 
 
 const explorer1 = {name: "Explorer1", score: 1}
 FizzbuzzService.applyValidationInExplorer(explorer1) // {name: "Explorer1", score: 1, trick: 1} 
-
+console.log(FizzbuzzService.applyValidationInExplorer(explorer1))
 const explorer3 = {name: "Explorer3", score: 3}
 FizzbuzzService.applyValidationInExplorer(explorer3) // {name: "Explorer3", score: 3, trick: "FIZZ"}
 

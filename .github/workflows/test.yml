@@ -9,5 +9,3 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run Jest
       uses: stefanoeb/jest-action@1.0.3
-
-      //Este es un GitHub Action que automatizará la ejecución de las pruebas cada vez que hagas PUSH a tu repositorio de GitHub.

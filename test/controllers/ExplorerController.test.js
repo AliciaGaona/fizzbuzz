@@ -13,7 +13,7 @@ describe("Test service ExplorerController", ()=>{
     })
 
     test ("3.Test service metodo ExplorerControoller getExplorersAmonutByMission(mission)", ()=>{
-        const getExplorersAmonutByMission= ExplorerController.getExplorersAmonutByMission("node")
-        expect(getExplorersAmonutByMission).toBeDefined()
+        const getAmountOfExplorersByMission= ExplorerController.getAmountOfExplorersByMission("node")
+        expect(getAmountOfExplorersByMission).toBeDefined()
     })
 })

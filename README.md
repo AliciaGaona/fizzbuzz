@@ -1,7 +1,7 @@
 # fizzbuzz
 Weekly Mission 4
 
-Este readme esta en proceso de contracción...
+Este readme esta en proceso de construcción...
 
 Glosario de temas del este proyecto:
 

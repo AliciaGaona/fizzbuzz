@@ -11,4 +11,9 @@ describe("Test service ExplorerController", ()=>{
         const getExplorersUsernamesByMission= ExplorerController.getExplorersUsernamesByMission("node")
         expect(getExplorersUsernamesByMission).toBeDefined()
     })
+
+    test ("3.Test service metodo ExplorerControoller getExplorersAmonutByMission(mission)", ()=>{
+        const getExplorersAmonutByMission= ExplorerController.getExplorersAmonutByMission("node")
+        expect(getExplorersAmonutByMission).toBeDefined()
+    })
 })

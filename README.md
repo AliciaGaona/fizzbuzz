@@ -1,7 +1,7 @@
 # fizzbuzz
 Weekly Mission 4
 
-
+Este readme esta en proceso de contracción...
 
 ![image](https://user-images.githubusercontent.com/99162884/166895204-7ee4cbfd-9b0b-4bdb-a04c-83b4d30b6fb1.png)
 
@@ -29,4 +29,45 @@ comando : npm run linter-fix
 Referencia :
 
 https://eslint.org/docs/rules/
+
+## PARTE DOS
+
+
+Inicialización de server.js, en este servidor montaremos nuestrso requerimientos
+
+1. Endpoint para recibir un parámetro por query params(GET)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167069994-2ebfff19-354d-4f81-a162-41f6dc4b9767.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167070099-d0102a89-61ea-44e5-854c-82f60a2f5e19.png)
+
+
+Corremos nuestro server de nodeJS :
+
+![image](https://user-images.githubusercontent.com/99162884/167070181-6ac4a947-47d2-43e0-8bd2-bbdf6de507aa.png)
+
+
+la url de este endPoint =>  localhost:3000/v1/explorers/:mission (:mission es un query param)
+
+Ejemplos:
+
+GET a los explores con mission: node
+
+![image](https://user-images.githubusercontent.com/99162884/167070204-7f053965-991a-4538-afa7-e3f3f4c2ddbd.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167070294-0ed1d732-8f48-4e03-994a-5aff21144d0d.png)
+
+
+GET a los explores con mission: java
+
+![image](https://user-images.githubusercontent.com/99162884/167070359-b32e1148-f785-4fc4-9280-7286e5dc15a4.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167070370-7c82c7ed-b058-449a-8646-47c82f58ee76.png)
+
+
+
 

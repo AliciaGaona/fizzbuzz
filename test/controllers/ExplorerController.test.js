@@ -6,4 +6,9 @@ describe("Test service ExplorerController", ()=>{
         const getExplorers=ExplorerController.getExplorersByMission("node")
         expect(getExplorers).toBeDefined()
     })
+
+    test("2.Test service metodo ExplorerController getExplorersUsernamesByMission", ()=>{
+        const getExplorersUsernamesByMission= ExplorerController.getExplorersUsernamesByMission("node")
+        expect(getExplorersUsernamesByMission).toBeDefined()
+    })
 })

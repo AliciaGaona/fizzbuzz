@@ -1,4 +1,4 @@
-const { TestScheduler } = require('jest')
+
 const ExplorerController=require('../../lib/controllers/ExplorerController')
 
 describe("Test service ExplorerController", ()=>{

@@ -91,6 +91,8 @@ GET a los explores con mission: java
 
 2. Endpoint para regresar la cantidad de explorers según la misión que se envíe.(GET)
 
+La url de este endPoint => localhost:3000/v1/explorers/:mission
+
 
 ![image](https://user-images.githubusercontent.com/99162884/167233118-5b31d928-2d74-44b7-acd6-6b0d34b6585c.png)
 
@@ -100,5 +102,10 @@ GET a los explores con mission: java
 
 ![image](https://user-images.githubusercontent.com/99162884/167233136-8063f380-a7b6-4b7f-82cd-c9345a9d2652.png)
 
+
+
+3. Endpoint para regresar la lista de usernames de los explorers filtrados por la misión.
+
+La url de este endPoint => localhost:3000/v1/explorers/usernames/:mission
 
 

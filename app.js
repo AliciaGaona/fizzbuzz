@@ -17,19 +17,19 @@ const getExplorersUsernamesByMission=ExplorerService.getExplorersUsernamesByMiss
 
 
 const explorer1 = {name: "Explorer1", score: 1}
-FizzbuzzService.applyValidationInExplorer(explorer1) // {name: "Explorer1", score: 1, trick: 1} 
-console.log(FizzbuzzService.applyValidationInExplorer(explorer1))
+FizzbuzzService.applyValidationInExplorer(explorers, "node") // {name: "Explorer1", score: 1, trick: 1} 
+//console.log(FizzbuzzService.applyValidationInExplorer(explorers, "node"))
 const explorer3 = {name: "Explorer3", score: 3}
 FizzbuzzService.applyValidationInExplorer(explorer3) // {name: "Explorer3", score: 3, trick: "FIZZ"}
 
 const explorer5 = {name: "Explorer5", score: 5}
 FizzbuzzService.applyValidationInExplorer(explorer5) // {name: "Explorer5", score: 5, trick: "BUZZ"}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer5))
+//console.log(FizzbuzzService.applyValidationInExplorer(explorer5))
 
 const explorer15 = {name: "Explorer15", score: 15}
 FizzbuzzService.applyValidationInExplorer(explorer15) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
-console.log(FizzbuzzService.applyValidationInExplorer(explorer15) )
+//console.log(FizzbuzzService.applyValidationInExplorer(explorer15) )
 
 
-FizzbuzzService.applyValidationInNumber(3) 
-console.log(FizzbuzzService.applyValidationInNumber(3) )
+
+console.log(FizzbuzzService.applyValidationInNumber(6) )

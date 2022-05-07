@@ -49,6 +49,8 @@ Referencia :
 
 https://eslint.org/docs/rules/
 
+---
+
 ## PARTE DOS
 
 
@@ -133,5 +135,9 @@ Al correr lint: npm run linter
 
 Para corregir inconsitencias: npm run linter-fix
 
+
+---
+
+## Parte 3: Nuevo requerimiento
 
 

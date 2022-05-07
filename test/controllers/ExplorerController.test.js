@@ -16,4 +16,9 @@ describe("Test service ExplorerController", ()=>{
         const getAmountOfExplorersByMission= ExplorerController.getAmountOfExplorersByMission("node")
         expect(getAmountOfExplorersByMission).toBeDefined()
     })
+
+    test ("3.Test service metodo ExplorerControoller applyValidationInNumber(number)", ()=>{
+        const applyValidationInNumber= ExplorerController.applyValidationInNumber(3)
+        expect(applyValidationInNumber).toBeDefined()
+    })
 })

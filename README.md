@@ -140,4 +140,9 @@ Para corregir inconsitencias: npm run linter-fix
 
 ## Parte 3: Nuevo requerimiento
 
+Tenemos un nuevo cliente que necesita parte de lo que ya tenemos pero de diferente forma. Es decir, el enviará un score, y nosotros le daremos lo correspondiente al trick. Esa validación es la que ya tenemos en FizzbuzzService. Pero ahora no necesitamos agregarle un campo a ningún explorer, solo regresar la palabra 'Fizz', 'Buzz', 'Fizzbuzz' o el score mismo, según es el caso. Cobraremos por cada request que recibamos.
+
+Nuevo requerimiento: Crea un endpoint para recibir un número y aplicar la validación del fizzbuzz.
+
+
 

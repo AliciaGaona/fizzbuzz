@@ -89,4 +89,16 @@ GET a los explores con mission: java
 
 
 
+2. Endpoint para regresar la cantidad de explorers según la misión que se envíe.(GET)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167233118-5b31d928-2d74-44b7-acd6-6b0d34b6585c.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233126-0868d69a-2771-4f67-b5b1-c0a806c9ac93.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233132-9c28639d-5b25-4033-8289-dde2bd6a0231.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233136-8063f380-a7b6-4b7f-82cd-c9345a9d2652.png)
+
+
 

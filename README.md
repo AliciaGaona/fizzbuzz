@@ -49,6 +49,8 @@ Referencia :
 
 https://eslint.org/docs/rules/
 
+---
+
 ## PARTE DOS
 
 
@@ -119,7 +121,28 @@ La url de este endPoint => localhost:3000/v1/explorers/usernames/:mission
 
 _TENEMOS LA API QUE NECESITAMOS, CON TRES SERVICISO GET PAR AMANEJAR LA INFORMACION DE EXPLORERS_
 
+Quite los punto y coma para poder probar el funcionamiento de lint.
 
+![image](https://user-images.githubusercontent.com/99162884/167233766-3dae6d74-4999-4e46-9669-4a39ac7a1d55.png)
+
+Al correr lint: npm run linter
+
+![image](https://user-images.githubusercontent.com/99162884/167233925-5c1a4252-521f-460f-8e46-685effeccf7a.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233936-ceef5366-770a-400c-98c9-c811c81e1435.png)
+
+
+
+Para corregir inconsitencias: npm run linter-fix
+
+
+---
+
+## Parte 3: Nuevo requerimiento
+
+Tenemos un nuevo cliente que necesita parte de lo que ya tenemos pero de diferente forma. Es decir, el enviará un score, y nosotros le daremos lo correspondiente al trick. Esa validación es la que ya tenemos en FizzbuzzService. Pero ahora no necesitamos agregarle un campo a ningún explorer, solo regresar la palabra 'Fizz', 'Buzz', 'Fizzbuzz' o el score mismo, según es el caso. Cobraremos por cada request que recibamos.
+
+Nuevo requerimiento: Crea un endpoint para recibir un número y aplicar la validación del fizzbuzz.
 
 
 

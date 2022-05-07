@@ -29,3 +29,7 @@ console.log(FizzbuzzService.applyValidationInExplorer(explorer5))
 const explorer15 = {name: "Explorer15", score: 15}
 FizzbuzzService.applyValidationInExplorer(explorer15) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 console.log(FizzbuzzService.applyValidationInExplorer(explorer15) )
+
+const explorer = {name: "Explorer15",score: 5, trick: "Buzz"}
+FizzbuzzService.applyValidationInNumber(explorer) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
+console.log(FizzbuzzService.applyValidationInNumber(explorer) )

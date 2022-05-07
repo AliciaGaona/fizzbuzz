@@ -54,7 +54,7 @@ https://eslint.org/docs/rules/
 
 Inicialización de server.js, en este servidor montaremos nuestrso requerimientos
 
-1. Endpoint para recibir un parámetro por query params(GET)
+_1. Endpoint para recibir un parámetro por query params(GET)_
 
 
 ![image](https://user-images.githubusercontent.com/99162884/167069994-2ebfff19-354d-4f81-a162-41f6dc4b9767.png)
@@ -89,7 +89,7 @@ GET a los explores con mission: java
 
 
 
-2. Endpoint para regresar la cantidad de explorers según la misión que se envíe.(GET)
+_2. Endpoint para regresar la cantidad de explorers según la misión que se envíe.(GET)_
 
 La url de este endPoint => localhost:3000/v1/explorers/:mission
 
@@ -104,7 +104,7 @@ La url de este endPoint => localhost:3000/v1/explorers/:mission
 
 
 
-3. Endpoint para regresar la lista de usernames de los explorers filtrados por la misión.
+_3. Endpoint para regresar la lista de usernames de los explorers filtrados por la misión._
 
 La url de este endPoint => localhost:3000/v1/explorers/usernames/:mission
 

@@ -1,7 +1,26 @@
 # fizzbuzz
 Weekly Mission 4
 
-Este readme esta en proceso de contracción...
+Este readme esta en proceso de construcción...
+
+Glosario de temas del este proyecto:
+
+- Clases
+
+- Objetos instanciados por una clase
+
+- Métodos
+
+- Server express
+
+- Actions de Github
+
+- Jest
+
+- Pruebas unitarias
+
+- Eslint
+
 
 ![image](https://user-images.githubusercontent.com/99162884/166895204-7ee4cbfd-9b0b-4bdb-a04c-83b4d30b6fb1.png)
 

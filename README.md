@@ -108,4 +108,18 @@ La url de este endPoint => localhost:3000/v1/explorers/:mission
 
 La url de este endPoint => localhost:3000/v1/explorers/usernames/:mission
 
+![image](https://user-images.githubusercontent.com/99162884/167233533-a64e7c63-ef6d-4c6e-bb43-523a89e7b46a.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233539-eeaf5417-c1a2-4cb8-bf62-de7743999321.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233546-0c1c73d4-b5e4-40f8-a3a1-cca361cb94f2.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167233554-ac4679ca-c2d0-4450-b317-ab76a5acd408.png)
+
+
+_TENEMOS LA API QUE NECESITAMOS, CON TRES SERVICISO GET PAR AMANEJAR LA INFORMACION DE EXPLORERS_
+
+
+
+
 

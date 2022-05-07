@@ -33,4 +33,4 @@ test("4. Validacion de explorers applyValidationInNumber ", ()=>{
     const explorer = FizzbuzzService.applyValidationInNumber({number:  5}) 
     const res= {score: 3, trick: "Fizzz"}
     expect(explorer).not.toBeUndefined()
-})
+}) 

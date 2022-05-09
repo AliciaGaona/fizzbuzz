@@ -144,5 +144,29 @@ Tenemos un nuevo cliente que necesita parte de lo que ya tenemos pero de diferen
 
 Nuevo requerimiento: Crea un endpoint para recibir un número y aplicar la validación del fizzbuzz.
 
+Score=3
+
+![image](https://user-images.githubusercontent.com/99162884/167237096-a688c506-2302-4223-97c3-33664f5feb32.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167237107-c6652565-015b-48c2-a230-09c176555d35.png)
+
+
+![image](https://user-images.githubusercontent.com/99162884/167237113-48255918-13ad-4114-b6b4-7d50a6aea5f6.png)
+
+Score=1
+
+![image](https://user-images.githubusercontent.com/99162884/167237138-78c9e42e-dfc1-4f27-a06f-a29ae575bea3.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167237152-515e9072-b6bc-4eaa-93be-0d2341d4e7cd.png)
+
+Score=15
+
+![image](https://user-images.githubusercontent.com/99162884/167237170-9e69bbea-f217-4742-a4c0-ffdc097447ae.png)
+
+![image](https://user-images.githubusercontent.com/99162884/167237177-aad94ac5-d83a-4e6f-a0a1-71ff261a56de.png)
+
+
+
 
 

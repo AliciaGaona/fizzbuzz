@@ -1,3 +1,2 @@
-import { BotToken } from 'best-error-reporting-service'
-
-export default new BotToken(process.env.TOKEN)
+require('dotenv').config()
+console.log(process.env.TOKEN) 

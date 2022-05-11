@@ -1,8 +1,8 @@
 
 const ExplorerController = require('./lib/controllers/ExplorerController');
-require('dotenv').config()
-console.log(process.env.TOKEN) 
 
+const FizzbuzzTelegram =ExplorerController.GetFizzbuzzTelegram();
+console.log(FizzbuzzTelegram)
 
-const fiz =ExplorerController.applyValidationInNumber(3);
-console.log(fiz)
+const GetExplorersFilterMissionTelegram =ExplorerController.GetExplorersFilterMissionTelegram();
+console.log(GetExplorersFilterMissionTelegram)

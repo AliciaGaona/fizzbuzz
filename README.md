@@ -11,7 +11,7 @@ Este readme esta en proceso de construcción...
 
 ```mermaid
 flowchart TB
-    get1-->b2
+    applyValidationInExplorer-->b2
     subgraph ExplorerController
     a1-->a2
     end
@@ -19,7 +19,7 @@ flowchart TB
     b1-->b2
     end
     subgraph FizzbuzzService
-   get1-->c2
+   applyValidationInExplorer-->c2
     end
 ```
 

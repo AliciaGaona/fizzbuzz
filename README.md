@@ -12,28 +12,16 @@ Este readme esta en proceso de construcción...
 ```mermaid
 flowchart TB
     c1-->b2
-    subgraph ExplorerService
+    subgraph ExplorerController
     a1-->a2
     end
-    subgraph ExplorerController
+    subgraph ExplorerService
     b1-->b2
     end
     subgraph FizzbuzzService
     c1-->c2
     end
 ```
-
-
-
-```mermaid
-flowchart LR
-    id1(Start)-->id2(Stop)
-    style id1 fill:#f9f,stroke:#333,stroke-width:4px
-    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
-
-
-```
-
 
 
 ---

@@ -3,6 +3,33 @@ Weekly Mission 4
 
 Este readme esta en proceso de construcción...
 
+
+---
+
+
+
+
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+```
+
+
+
+
+
+
+---
+
 Glosario de temas del este proyecto:
 
 - Clases

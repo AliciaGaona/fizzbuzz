@@ -11,15 +11,14 @@ Este readme esta en proceso de construcción...
 
 ```mermaid
 flowchart TB
-    c1-->a2
-    ExplorerService
-    end
+    c1-->b2
+    subgraph ExplorerService
     a1-->a2
     end
-    subgraph two
+    subgraph ExplorerController
     b1-->b2
     end
-    subgraph three
+    subgraph FizzbuzzService
     c1-->c2
     end
 ```

@@ -11,7 +11,7 @@ Este readme esta en proceso de construcción...
 
 ```mermaid
 flowchart TB
-    applyValidationInNumber-->a2
+    applyValidationInNumber-->a1
     applyValidationInExplorer-->a2
     subgraph ExplorerController
     a1-->a2

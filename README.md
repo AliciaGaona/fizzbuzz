@@ -12,7 +12,7 @@ Este readme esta en proceso de construcción...
 ```mermaid
 flowchart TB
     c1-->a2
-    subgraph one
+    ExplorersService
     a1-->a2
     end
     subgraph two

@@ -263,7 +263,7 @@ test("4. Validacion de explorers applyValidationInNumber ", ()=>{
 __Controller__ - Usa los los métodos de las clasee anteriores para obtener el resultado
 
 
-
+```js
 const ExplorerController=require('../../lib/controllers/ExplorerController')
 
 describe("Test service ExplorerController", ()=>{
@@ -287,3 +287,5 @@ describe("Test service ExplorerController", ()=>{
         expect(applyValidationInNumber).toBeDefined()
     })
 })
+
+```

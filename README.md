@@ -190,12 +190,100 @@ Score=15
 
 __Reader__ - Clase que lee archivos json y pasan el modelo de datos
 
-`
+
+```js
 const Reader= require('./../../lib/utils/Reader')
     test("1. leer archivo Json que no existe", ()=>{
      const explorers = Reader.readJsonFile("explorers.json"); 
      expect(explorers).toBe(explorers)
      })
+```
 
-`
 
+__ServiceExplorers__ - maneja la información de los explorers del json(en este caso hace el filtrado por mission node)
+
+
+```js
+const ExplorerService= require('./../../lib/services/ExplorerService')
+
+    test("1. Crear filtro de explorers en una mission", ()=>{
+        const explorers = [{mission: "node"}]
+        const explorersInNode = ExplorerService.filterByMission(explorers, "node")
+        expect(explorersInNode.length).toBe(1)
+    })
+
+```
+
+
+
+__FizzbuzzService__ - Crea requerimeintos con difrentes validaciones, partiendo de la info que llega de la class Explorers
+
+
+```js
+const FizzbuzzService= require('./../../lib/services/FizzbuzzService')
+
+test("1. Validacion de explorers applyValidationInExplorer score divisible entre 1", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer1", score: 1})  
+    const res= {name: "Explorer1", score: 1,  trick: 1}
+    expect(explorer).toStrictEqual(res)
+})
+
+test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3&&5", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer2", score: 15})  
+    const res= {name: "Explorer2", score: 15,  trick: "FIZZBUZZ", trick: 15}
+    expect(explorer).toStrictEqual(res)
+})
+
+test("2. Validacion de explorers applyValidationInExplorer score divisible entre 3", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer3", score: 3})  
+    const res= {name: "Explorer3", score: 3, trick: "FIZZ", trick: 3}
+    expect(explorer).toStrictEqual(res)
+})
+test("3. Validacion de explorers applyValidationInExplorer score divisible entre 5", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer5", score: 5}) 
+    const res= {name: "Explorer5", score: 5, trick: "BUZZ", trick:5}
+    expect(explorer).toStrictEqual(res)
+})
+
+test("4. Validacion de explorers applyValidationInExplorer score divisible entre 5", ()=>{
+    const explorer = FizzbuzzService.applyValidationInExplorer({name: "Explorer5", score: 5}) 
+    const res= {name: "Explorer5", score: 5, trick: "BUZZ", trick:5}
+    expect(explorer).not.toBeUndefined()
+})
+
+test("4. Validacion de explorers applyValidationInNumber ", ()=>{
+    const explorer = FizzbuzzService.applyValidationInNumber({number:  5}) 
+    const res= {score: 3, trick: "Fizzz"}
+    expect(explorer).not.toBeUndefined()
+}) 
+
+```
+
+
+__Controller__ - Usa los los métodos de las clasee anteriores para obtener el resultado
+
+
+
+const ExplorerController=require('../../lib/controllers/ExplorerController')
+
+describe("Test service ExplorerController", ()=>{
+    test("1.Probando metodo static getExplorersByMission, que recibe lista de explorers", ()=>{
+        const getExplorers=ExplorerController.getExplorersByMission("node")
+        expect(getExplorers).toBeDefined()
+    })
+
+    test("2.Test service metodo ExplorerController getExplorersUsernamesByMission", ()=>{
+        const getExplorersUsernamesByMission= ExplorerController.getExplorersUsernamesByMission("node")
+        expect(getExplorersUsernamesByMission).toBeDefined()
+    })
+
+    test ("3.Test service metodo ExplorerControoller getExplorersAmonutByMission(mission)", ()=>{
+        const getAmountOfExplorersByMission= ExplorerController.getAmountOfExplorersByMission("node")
+        expect(getAmountOfExplorersByMission).toBeDefined()
+    })
+
+    test ("3.Test service metodo ExplorerControoller applyValidationInNumber(number)", ()=>{
+        const applyValidationInNumber= ExplorerController.applyValidationInNumber(3)
+        expect(applyValidationInNumber).toBeDefined()
+    })
+})

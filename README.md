@@ -192,7 +192,6 @@ __Reader__ - Clase que lee archivos json y pasan el modelo de datos
 
 `
 const Reader= require('./../../lib/utils/Reader')
-
     test("1. leer archivo Json que no existe", ()=>{
      const explorers = Reader.readJsonFile("explorers.json"); 
      expect(explorers).toBe(explorers)

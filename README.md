@@ -1,9 +1,6 @@
 # fizzbuzz
 Weekly Mission 4
 
-Este readme esta en proceso de construcción...
-
-
 ---
 
 ## Post realcionados
@@ -187,5 +184,19 @@ Score=15
 
 
 
+## Pruebas unitarias incluidas:
 
+![image](https://user-images.githubusercontent.com/99162884/168535872-af58897f-1836-48f6-b759-b433b7485953.png)
+
+__Reader__ - Clase que lee archivos json y pasan el modelo de datos
+
+`
+const Reader= require('./../../lib/utils/Reader')
+
+    test("1. leer archivo Json que no existe", ()=>{
+     const explorers = Reader.readJsonFile("explorers.json"); 
+     expect(explorers).toBe(explorers)
+     })
+
+`
 

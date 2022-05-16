@@ -6,26 +6,21 @@ Este readme esta en proceso de construcción...
 
 ---
 
+## Post realcionados
+
+[Pasos para iniciaizar proyecto en NodeJS](https://aliciagaona.github.io/my_launchx_blog/posts/pasosparainicializarnodejs/)
+
+[Dependencias](https://aliciagaona.github.io/my_launchx_blog/posts/dependencias/)
+
+[Métodos útiles](https://aliciagaona.github.io/my_launchx_blog/posts/metodosnodejs/)
 
 
+## Estructura general
 
 ```mermaid
-flowchart TB
-    applyValidationInNumber-->a1
-    applyValidationInExplorer-->a2
-    subgraph ExplorerController
-    a1-->a2
-    end
-    subgraph ExplorerService
-    b1-->b2
-    end
-    subgraph FizzbuzzService
-   applyValidationInExplorer-->c2
-    end
+flowchart LR
+  Json -- leer modelo de infomacón --> Service -- leer métodos de Service --> Controller
 ```
-
-
----
 
 Glosario de temas del este proyecto:
 

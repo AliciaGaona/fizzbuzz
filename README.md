@@ -7,7 +7,7 @@ Weekly Mission 4
 
 _inspirado por el taller de Visual Thinking @visual_partner_
 
-## Post realcionados
+## Post de blog realcionados
 
 [Pasos para iniciaizar proyecto en NodeJS](https://aliciagaona.github.io/my_launchx_blog/posts/pasosparainicializarnodejs/)
 

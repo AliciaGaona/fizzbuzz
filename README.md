@@ -1,6 +1,12 @@
 # fizzbuzz
 Weekly Mission 4
 
+## Esqueleto ilustrado
+
+![Fizzibuzz](https://user-images.githubusercontent.com/99162884/168549108-502ff04d-9121-4e4e-b009-4b1334eb161b.png)
+
+_inspirado por el taller de Visual Thinking @visual_partner_
+
 ## Post realcionados
 
 [Pasos para iniciaizar proyecto en NodeJS](https://aliciagaona.github.io/my_launchx_blog/posts/pasosparainicializarnodejs/)
